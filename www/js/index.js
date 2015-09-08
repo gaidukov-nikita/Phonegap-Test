@@ -63,6 +63,7 @@ var app = {
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
+        /*
         var parentElement = document.getElementById(id);
         var listeningElement = parentElement.querySelector('.listening');
         var receivedElement = parentElement.querySelector('.received');
@@ -73,5 +74,6 @@ var app = {
         console.log('Received Event: ' + id);
 
         showMessage("2131231",null,"2","OK");
+        */
     }
 };
