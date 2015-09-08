@@ -17,35 +17,12 @@
  * under the License.
  */
 
-function showMessage(message, callback, title, buttonName) {
-
-    title = title || "default title";
-    buttonName = buttonName || 'OK';
-
-    if(navigator.notification && navigator.notification.alert) {
-
-        navigator.notification.alert(
-            message,    // message
-            callback,   // callback
-            title,      // title
-            buttonName  // buttonName
-        );
-
-    } else {
-
-        alert(message);
-        callback();
-    }
-
-}
 
 
 var app = {
     // Application Constructor
     initialize: function() {
         this.bindEvents();
-
-                showMessage("2131231",null,"2","OK");
     },
     // Bind Event Listeners
     //
