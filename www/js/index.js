@@ -72,10 +72,14 @@ var app = {
 
         console.log('Received Event: ' + id);
 
+        showMessage("1!!!!!!!",null,"2","OK");
+
         window.plugins.html5Video.initialize({
               "myvideo" : "Alpha.mp4"
           });
         window.plugins.html5Video.play("myvideo");
+
+        showMessage("2!!!!!!!",null,"2","OK");
 
         //showMessage("2131231",null,"2","OK");
     }
