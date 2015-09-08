@@ -73,7 +73,7 @@ var app = {
         console.log('Received Event: ' + id);
 
         window.plugins.html5Video.initialize({
-              "myvideo" : "Green.mp4"
+              "myvideo" : "Alpha.mp4"
           });
         window.plugins.html5Video.play("myvideo");
 
