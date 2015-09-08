@@ -72,6 +72,6 @@ var app = {
 
         console.log('Received Event: ' + id);
 
-        showMessage("2131231",null,"2","OK");
+        //showMessage("2131231",null,"2","OK");
     }
 };
