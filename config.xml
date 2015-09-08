@@ -1,5 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.phonegap.helloworld" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget xmlns       = "http://www.w3.org/ns/widgets"
+    xmlns:gap       = "http://phonegap.com/ns/1.0"
+    xmlns:android   = "http://schemas.android.com/apk/res/android"
+    id              = "com.lumberg.greeeaaat"
+    version         = "1.0.0">
+
     <name>Hello World</name>
     <description>
         Hello World sample application that responds to the deviceready event.
@@ -74,6 +79,12 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+
+
+    <gap:config-file platform="android" parent="/manifest" mode="merge">
+     <application android:hardwareAccelerated="true">
+    </gap:config-file>
+
     <platform name="android">
         <allow-intent href="market:*" />
     </platform>
