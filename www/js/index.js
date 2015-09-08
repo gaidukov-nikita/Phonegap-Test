@@ -17,12 +17,35 @@
  * under the License.
  */
 
+function showMessage(message, callback, title, buttonName) {
+
+    title = title || "default title";
+    buttonName = buttonName || 'OK';
+
+    if(navigator.notification && navigator.notification.alert) {
+
+        navigator.notification.alert(
+            message,    // message
+            callback,   // callback
+            title,      // title
+            buttonName  // buttonName
+        );
+
+    } else {
+
+        alert(message);
+        callback();
+    }
+
+}
 
 
 var app = {
     // Application Constructor
     initialize: function() {
         this.bindEvents();
+
+        showMessage("2131231",null,"2","OK");
     },
     // Bind Event Listeners
     //
@@ -40,7 +63,6 @@ var app = {
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
-        /*
         var parentElement = document.getElementById(id);
         var listeningElement = parentElement.querySelector('.listening');
         var receivedElement = parentElement.querySelector('.received');
@@ -51,6 +73,5 @@ var app = {
         console.log('Received Event: ' + id);
 
         showMessage("2131231",null,"2","OK");
-        */
     }
 };
